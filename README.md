@@ -3,8 +3,8 @@
 This project aims to analyze the impact of mobility restrictions on COVID-19 fatalities. By using statistical methods and machine learning algorithms, we simulate various intervention scenarios to understand their potential effects on reducing the number of deaths caused by the virus.
 
 ## Objectives
-- To develop a robust model for simulating synthetic interventions.
-- To analyze the effectiveness of different intervention strategies.
+- To develop a model for simulating the impact of different mobility restrictions.
+- To analyze the effectiveness of mobility restrictions on reducing COVID-19 fatalities.
 
 ## Methodology
 1. Data Collection: Gather COVID-19 related data from JHU.
