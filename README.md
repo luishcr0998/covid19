@@ -1,93 +1,100 @@
-# Synthetic Interventions on COVID-19 Fatalities
+# COVID-19 Impact Analysis: Synthetic Interventions on Mobility Restrictions
 
-This project analyzes the impact of mobility restrictions on COVID-19 fatalities, with a special focus on Brazil. Using advanced statistical methods and machine learning algorithms, we simulate various intervention scenarios to understand their potential effects on reducing virus-related deaths.
+## 📋 Overview
 
-## 🎯 Objectives
-- Develop a robust model to simulate the impact of different levels of mobility restrictions
-- Analyze the effectiveness of mobility restrictions in reducing COVID-19 fatalities
-- Compare different restriction levels (Low, Moderate, Severe)
-- Estimate counterfactuals based on severe restrictions
-- Visualize and understand how different intervention levels might have affected mortality rates
+In this project I will analyze the relationship between mobility restrictions and COVID-19 fatalities using advanced statistical methods. Through **Synthetic Interventions** approach, we can estimate counterfactual scenarios to determine how different levels of mobility restrictions might have impacted mortality rates, with a special focus on Brazil.
+
+The project demonstrates that countries implementing moderate mobility restrictions (like Brazil) could have significantly reduced COVID-19 deaths by adopting more severe mobility intervention measures.
+
+## 🔍 Key Features
+
+- **Rigorous Comparative Analysis** of different mobility restriction levels (Low, Moderate, Severe)
+- **Counterfactual Estimation** using the Synthetic Interventions methodology
+- **Focus on Brazil** as a case study for moderate restriction impact
+- **Comprehensive Data Visualization** of mortality patterns across restriction categories
+- **Evidence-based Insights** on public health intervention effectiveness
 
 ## 📊 Data Sources
-- **Johns Hopkins COVID-19 Database**: Mortality data
-  - Provides information on cumulative COVID-19 related deaths
-  - Pre-processed data to show daily values
-- **Google Mobility Reports**: Restriction level data
-  - Information on mobility patterns during the pandemic
 
-## 🔬 Methodology
-1. **Data Collection**
-   - Extraction from Johns Hopkins database
-   - Integration with Google mobility reports
+The analysis leverages two primary datasets:
+- **Johns Hopkins COVID-19 Database**: Provides comprehensive time-series data on COVID-19 deaths globally
+- **Google Mobility Reports**: Quantifies mobility changes during the pandemic across different countries
 
-2. **Data Preprocessing**
-   - Data cleaning and validation
-   - Missing value treatment
-   - Date conversion and formatting
-   - Daily metrics calculation
+## 🧪 Methodology
 
-3. **Model Development**
-   - Implementation of Synthetic Interventions method
-   - Model calibration and validation
-   - Robustness analysis
+### Data Preparation
+1. **Data Collection & Integration** - Mortality data from Johns Hopkins and mobility metrics from Google
+2. **Preprocessing & Cleaning** - Handling missing values, outliers, and date normalization
+3. **Feature Engineering** - Calculating daily metrics and creating mobility restriction categories
 
-4. **Scenario Analysis**
-   - Simulation of different restriction levels
-   - Scenario comparison
-   - Counterfactual evaluation
+### Analysis Approach
+1. **Clustering Countries** by mobility restriction levels based on Google mobility data
+2. **Synthetic Intervention Modeling** to create counterfactual scenarios
+3. **Time-Series Analysis** comparing actual vs. counterfactual outcomes
+4. **Statistical Validation** to ensure robustness of conclusions
 
-5. **Results Interpretation**
-   - Statistical analysis of results
-   - Data visualization
-   - Conclusions and recommendations development
+### Mathematical Foundation
+The Synthetic Interventions method leverages matrix completion techniques to predict counterfactual scenarios, allowing estimation of what would have happened in Brazil if stricter mobility restrictions had been implemented.
 
-## 🛠️ Tools and Technologies
-- **Python**: Main programming language
-- **Pandas**: Data manipulation and analysis
-- **NumPy**: Numerical computing
-- **Matplotlib & Seaborn**: Data visualization
-- **Plotly Express**: Interactive visualizations
-- **Scikit-learn**: Machine learning algorithms
+## 📈 Key Findings
 
-## 📝 How to Use
-1. **Environment Setup**
-   ```bash
-   git clone [REPOSITORY_URL]
-   cd covid
-   pip install -r requirements.txt
-   ```
+1. **Significant Mortality Reduction Potential** - Countries with severe mobility restrictions experienced substantially fewer COVID-19 deaths per capita
+2. **Brazilian Counterfactual** - Modeling suggests Brazil could have prevented a significant number of deaths by implementing stricter mobility measures
+3. **Intervention Timing Matters** - Early implementation of severe restrictions shows better outcomes than delayed responses
 
-2. **Running the Analysis**
-   - Open the Jupyter Notebook `Synthetic Interventions - Covid19.ipynb`
-   - Execute cells in sequential order
-   - Results and visualizations will be generated automatically
+## 💻 Technical Implementation
 
-## 📈 Project Structure
+- **Programming Language**: Python 3.10
+- **Core Libraries**:
+  - **pandas & numpy**: Data manipulation and numerical operations
+  - **matplotlib, seaborn & plotly**: Data visualization
+  - **scikit-learn**: Machine learning modeling
+
+## 🚀 Getting Started
+
+```bash
+# Clone the repository
+git clone https://github.com/yourusername/covid.git
+cd covid
+
+# Install dependencies
+pip install -r requirements.txt
+
+# Open the Jupyter notebook
+jupyter notebook "Synthetic Interventions - Covid19.ipynb"
+```
+
+## 📁 Project Structure
+
 ```
 covid/
-├── data/                      # Raw and processed data
-├── notebooks/                 # Jupyter notebooks
-│   └── Synthetic Interventions - Covid19.ipynb
-├── README.md                 # This file
-└── requirements.txt          # Project dependencies
+├── Synthetic Interventions - Covid19.ipynb  # Main analysis notebook
+├── data_global_data.csv                    # COVID-19 mortality dataset
+├── data_global_mobility_report.csv         # Google mobility dataset
+├── boxplot_continentes.html                # Interactive visualization
+├── img/                                    # Visualizations and figures
+│   ├── boxplots.png
+│   ├── newplot.png
+│   └── ...
+├── README.md                               # Project documentation
+└── LICENSE                                 # MIT License
 ```
 
-## 🔍 Key Results
-- Comparative analysis of different restriction levels
-- Counterfactual estimates for alternative scenarios
-- Interactive result visualizations
-- Insights on restriction measures effectiveness
+## 📚 Further Research Opportunities
 
-## 📚 References
-- Johns Hopkins COVID-19 Database
-- Google Mobility Reports
-- Scientific literature on synthetic interventions in epidemiology
+- Extending the analysis to other countries and regions
+- Incorporating additional variables like vaccination rates and healthcare capacity
+- Developing predictive models for future pandemic response planning
+- Analyzing economic impact correlations with mobility restriction levels
 
-## 👥 Contributions
-Contributions are welcome! Please read the contribution guidelines before submitting pull requests.
+## 🔓 License
 
-## 📄 License
-This project is under the MIT License. See the `LICENSE` file for more details.
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## 🔗 References
+
+- Abadie, A., Diamond, A., & Hainmueller, J. (2010). Synthetic Control Methods for Comparative Case Studies.
+- Johns Hopkins University Center for Systems Science and Engineering. (2020). COVID-19 Data Repository.
+- Google LLC. (2020). Google COVID-19 Community Mobility Reports.
 
 
